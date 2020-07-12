@@ -13,12 +13,12 @@ double CBody::GetDensity()
 
 double CBody::GetResultingForceInWater()
 {
-	return round((GetDensity() - FLUID_DENSITY) * GetVolume() * FREE_FALL_ACCELERATION * FLUID_DENSITY) / FLUID_DENSITY;
+	return (GetDensity() - FLUID_DENSITY) * GetVolume() * FREE_FALL_ACCELERATION;
 }
 
 double CBody::GetMass()
 {
-	return round(GetDensity() * GetVolume() * FLUID_DENSITY) / FLUID_DENSITY;
+	return GetDensity() * GetVolume();
 }
 
 void CBody::Print(std::ostream& output)

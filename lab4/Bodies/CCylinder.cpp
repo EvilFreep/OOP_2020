@@ -17,7 +17,7 @@ double CCylinder::GetHeight() const
 
 double CCylinder::GetVolume() const
 {
-	return round(M_PI * baseRadius * baseRadius * height * 1000) / 1000;
+	return M_PI * baseRadius * baseRadius * height;
 }
 
 void CCylinder::OtherParameters(ostream& output) const

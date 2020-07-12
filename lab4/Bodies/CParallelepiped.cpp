@@ -24,7 +24,7 @@ double CParallelepiped::GetDepth() const
 
 double CParallelepiped::GetVolume() const
 {
-	return round(depth * height * width * FLUID_DENSITY) / FLUID_DENSITY;
+	return depth * height * width;
 }
 
 void CParallelepiped::OtherParameters(ostream& output) const

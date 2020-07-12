@@ -12,7 +12,7 @@ double CSphere::GetRadius() const
 
 double CSphere::GetVolume() const
 {
-	return round((4 * M_PI * radius * radius * radius / 3) * 1000) / 1000;
+	return (4 * M_PI * radius * radius * radius / 3);
 }
 
 void CSphere::OtherParameters(std::ostream& output) const
